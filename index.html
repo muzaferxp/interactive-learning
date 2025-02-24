@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Basics Tutorial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .keyword {
+            color: #d73a49;
+            font-weight: bold;
+        }
+        .data-type {
+            color: #005cc5;
+            font-weight: bold;
+        }
+        .function {
+            color: #6f42c1;
+            font-weight: bold;
+        }
+        pre code {
+            display: block;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            background-color: #f3f4f6;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 p-8">
+    <div class="max-w-4xl mx-auto space-y-8">
+        <h1 class="text-4xl font-bold text-gray-800 mb-8">Python Basics Tutorial</h1>
+
+        <!-- Data Types Section -->
+        <section class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold text-blue-600 mb-4">1. Data Types</h2>
+            <p class="mb-4">Python has various <span class="data-type">data types</span> including:</p>
+            
+            <pre><code><span class="keyword">Integer</span>: 5, -3
+<span class="keyword">Float</span>: 3.14, -0.5
+<span class="keyword">String</span>: "hello"
+<span class="keyword">Boolean</span>: <span class="keyword">True</span>, <span class="keyword">False</span>
+<span class="keyword">List</span>: [1, 2, 3]
+<span class="keyword">Tuple</span>: (4, 5, 6)
+<span class="keyword">Dictionary</span>: {"name": "Alice"}</code></pre>
+
+            <!-- Tasks -->
+            <div class="mt-6 space-y-4">
+                <h3 class="text-lg font-medium text-gray-700">Tasks</h3>
+                <div class="task">
+                    <pre><code>colors = ["blue", "green", "red"]
+<span class="keyword">print</span>(colors)</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- If-Else Section -->
+        <section class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold text-green-600 mb-4">2. If-Else Statements</h2>
+            <pre><code>age = 18
+<span class="keyword">if</span> age >= 18:
+    <span class="keyword">print</span>("You can vote!")
+<span class="keyword">else</span>:
+    <span class="keyword">print</span>("Can't vote yet.")</code></pre>
+
+            <!-- Tasks -->
+            <div class="mt-6 space-y-4">
+                <h3 class="text-lg font-medium text-gray-700">Tasks</h3>
+                <div class="task">
+                    <pre><code>num = -5
+<span class="keyword">if</span> num > 0:
+    <span class="keyword">print</span>("Positive")
+<span class="keyword">elif</span> num < 0:
+    <span class="keyword">print</span>("Negative")
+<span class="keyword">else</span>:
+    <span class="keyword">print</span>("Zero")</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- For Loop Section -->
+        <section class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold text-purple-600 mb-4">3. For Loop</h2>
+            <pre><code><span class="keyword">for</span> fruit <span class="keyword">in</span> ["apple", "banana"]:
+    <span class="keyword">print</span>(fruit)</code></pre>
+
+            <!-- Tasks -->
+            <div class="mt-6 space-y-4">
+                <h3 class="text-lg font-medium text-gray-700">Tasks</h3>
+                <div class="task">
+                    <pre><code>total = 0
+<span class="keyword">for</span> i <span class="keyword">in</span> <span class="function">range</span>(1, 11):
+    total += i
+<span class="keyword">print</span>(total)</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Functions Section -->
+        <section class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold text-red-600 mb-4">4. Functions</h2>
+            <pre><code><span class="keyword">def</span> <span class="function">greet</span>(name):
+    <span class="keyword">return</span> f"Hello, {name}!"</code></pre>
+
+            <!-- Tasks -->
+            <div class="mt-6 space-y-4">
+                <h3 class="text-lg font-medium text-gray-700">Tasks</h3>
+                <div class="task">
+                    <pre><code><span class="keyword">def</span> <span class="function">area</span>(length, width):
+    <span class="keyword">return</span> length * width</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- File Handling Section -->
+        <section class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold text-yellow-600 mb-4">5. File Read/Write</h2>
+            <pre><code><span class="keyword">with</span> <span class="function">open</span>("test.txt", "w") <span class="keyword">as</span> file:
+    file.write("Hello World!")</code></pre>
+
+            <!-- Tasks -->
+            <div class="mt-6 space-y-4">
+                <h3 class="text-lg font-medium text-gray-700">Tasks</h3>
+                <div class="task">
+                    <pre><code><span class="keyword">with</span> <span class="function">open</span>("diary.txt", "a") <span class="keyword">as</span> file:
+    file.write("New entry\n")</code></pre>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
